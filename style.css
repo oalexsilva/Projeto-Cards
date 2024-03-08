@@ -1,0 +1,138 @@
+/* Define estilos básicos para o corpo do documento */
+body {
+    margin: 0; /* Remove as margens padrão do corpo do documento */
+    font-family: sans-serif; /* Define a fonte padrão para o corpo do documento */
+    background-color: rgb(231, 229, 229); /* Define a cor de fundo do corpo do documento */
+}
+
+/* Define estilos para os títulos h3 */
+h3 {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 30px; /* Define o tamanho da fonte */
+    margin: 0; /* Remove as margens padrão do elemento */
+    padding-top: 10px; /* Adiciona um espaçamento superior */
+}
+
+/* Define estilos para os links */
+a {
+    text-decoration: none; /* Remove a decoração de link padrão */
+}
+
+/* Define estilos para a galeria de produtos */
+.galeria {
+    display: flex; /* Usa o modelo flexbox para organizar os itens */
+    flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
+    width: 100%; /* Define a largura da galeria */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    margin: 50px 0; /* Adiciona margem superior e inferior */
+}
+
+/* Define estilos para o contêiner de cada produto */
+.container {
+    width: 20%; /* Define a largura do contêiner */
+    margin: 15px; /* Adiciona margens */
+    box-sizing: border-box; /* Faz com que as bordas e preenchimentos sejam incluídos na largura e altura total */
+    float: left; /* Permite que os contêineres flutuem lado a lado */
+    text-align: center; /* Alinha o texto ao centro */
+    border-radius: 20px; /* Adiciona cantos arredondados */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    padding-top: 10px; /* Adiciona um espaçamento superior */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.644), 0 3px 6px rgba(0, 0, 0, 0.411); /* Adiciona sombra */
+    transition: .4s; /* Adiciona uma transição suave */
+    background: rgb(255, 255, 255); /* Define a cor de fundo */
+}
+
+/* Define estilos para o contêiner de cada produto ao passar o mouse */
+.container:hover {
+    box-shadow: 0 3px 6px rgb(2, 135, 212), 0 3px 6px rgb(0, 4, 255); /* Altera a sombra ao passar o mouse */
+    transform: translate(0px, -8px); /* Move o contêiner para cima */
+}
+
+/* Define estilos para imagens */
+img {
+    width: 300px; /* Define a largura da imagem */
+    height: 250px; /* Define a altura da imagem */
+    text-align: center; /* Alinha a imagem ao centro */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block; /* Faz com que a imagem seja exibida como bloco */
+}
+
+/* Define estilos para parágrafos */
+p {
+    text-align: center; /* Alinha o texto ao centro */
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    padding-top: 0 8px; /* Adiciona um espaçamento superior */
+}
+
+/* Define estilos para o preço h6 */
+h6 {
+    font-size: 26px; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    color: blue; /* Define a cor do texto */
+    margin: 0; /* Remove as margens padrão */
+}
+
+/* Define estilos para a lista de estrelas */
+ul {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    display: flex; /* Usa o modelo flexbox */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Define estilos para os itens da lista */
+li {
+    padding: 10px; /* Adiciona preenchimento */
+}
+
+/* Define estilos para os ícones de estrela */
+.fa {
+    font-size: 26px; /* Define o tamanho da fonte */
+    transition: .4s; /* Adiciona uma transição suave */
+}
+
+/* Define estilos para as estrelas preenchidas */
+.checked {
+    color: rgba(211, 197, 3, 0.726); /* Define a cor das estrelas preenchidas */
+}
+
+/* Define estilos para os ícones de estrela ao passar o mouse */
+.fa:hover {
+    transform: scale(1.5); /* Aumenta o tamanho do ícone ao passar o mouse */
+    transition: .6s; /* Adiciona uma transição suave */
+}   
+
+/* Define estilos para os botões */
+button {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 25px; /* Define o tamanho da fonte */
+    color: white; /* Define a cor do texto */
+    width: 100%; /* Define a largura do botão */
+    padding: 15px; /* Adiciona preenchimento */
+    border: 0; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    margin-top: 5px; /* Adiciona margem superior */
+    border-bottom-right-radius: 20px; /* Adiciona cantos arredondados */
+    border-bottom-left-radius: 20px; /* Adiciona cantos arredondados */
+}
+
+/* Define estilos para os botões de compra */
+.comprar1, .comprar2, .comprar3, .comprar4 {
+    background-color: rgb(0, 102, 255); /* Define a cor de fundo dos botões */
+}
+
+/* Define regras de mídia para diferentes larguras de tela */
+@media(max-width: 1000px) {
+    .container{
+        width: 45%; /* Define a largura do contêiner para telas menores */
+    }
+}
+
+@media(max-width:750px) {
+    .container{
+        width: 100%; /* Define a largura do contêiner para telas ainda menores */
+    }
+}
